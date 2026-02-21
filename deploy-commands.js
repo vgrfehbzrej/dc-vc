@@ -1,3 +1,4 @@
+// deploy-commands.js
 const { REST, Routes, SlashCommandBuilder } = require('discord.js');
 require('dotenv').config();
 
@@ -13,9 +14,10 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
   try {
     console.log('Started refreshing application (/) commands.');
 
+    // Trage hier deine Application ID & Server ID ein
     await rest.put(
-      Routes.applicationGuildCommands('1474629086042394664', '1427681480741748828'),
-      { body: commands },
+      Routes.applicationGuildCommands('DEINE_APPLICATION_ID', 'DEINE_GUILD_ID'),
+      { body: commands }
     );
 
     console.log('Successfully reloaded application (/) commands.');
