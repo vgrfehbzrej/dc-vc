@@ -7,7 +7,7 @@ const client = new Client({
 });
 
 client.once('ready', () => {
-  console.log(`Logged in as ${client.user.tag}`);
+  console.log(`Logged in as ${client.user.tag}`); // zeigt: 1k hours bot von Melven
 });
 
 client.on('interactionCreate', async interaction => {
@@ -23,11 +23,9 @@ client.on('interactionCreate', async interaction => {
       adapterCreator: channel.guild.voiceAdapterCreator
     });
 
-    interaction.reply('Ich bin drin 👍');
+    interaction.reply(`Ich bin jetzt drin, ${client.user.username} 🎧`);
   }
 });
 
-// Token aus Environment Variable
+// Token aus Environment Variable (sicher!)
 client.login(process.env.DISCORD_TOKEN);
-
-
