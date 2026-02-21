@@ -16,7 +16,7 @@ const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
 
     // Trage hier deine Application ID & Server ID ein
     await rest.put(
-      Routes.applicationGuildCommands('DEINE_APPLICATION_ID', 'DEINE_GUILD_ID'),
+      Routes.applicationGuildCommands('1474629086042394664', '1427681480741748828'),
       { body: commands }
     );
 
