@@ -28,4 +28,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Token aus Environment Variable (sicher!)
-client.login(process.env.DISCORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN
+
