@@ -27,4 +27,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 // Token als Environment Variable
-client.login(process.env._MTQ3NDYyOTA4NjA0MjM5NDY2NA.GdfL14.1j1eehgUVWUU2Ju1uvq1Qnj8_DO-OM2LZC0fEk);
+client.login(process.env.MTQ3NDYyOTA4NjA0MjM5NDY2NA.GdfL14.1j1eehgUVWUU2Ju1uvq1Qnj8_DO-OM2LZC0fEk);
+
