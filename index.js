@@ -27,8 +27,7 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-// ⚠️ Token wird aus der Environment Variable geladen
+// Token aus Environment Variable
 client.login(process.env.DISCORD_TOKEN);
-
 
 
