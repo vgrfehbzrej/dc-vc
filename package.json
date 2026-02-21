@@ -1,7 +1,7 @@
 {
   "name": "discord-vc-bot",
   "version": "1.0.0",
-  "description": "24/7 Discord Voice Channel Bot",
+  "description": "1k hours bot von Melven – 24/7 VC Bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
